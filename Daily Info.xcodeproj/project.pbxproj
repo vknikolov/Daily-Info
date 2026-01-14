@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6A8885022F179F6F002F6954 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8885012F179F6F002F6954 /* WidgetKit.framework */; };
+		6A8885042F179F6F002F6954 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8885032F179F6F002F6954 /* SwiftUI.framework */; };
+		6A8885152F179F6F002F6954 /* Daily Info GridExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6A8884FF2F179F6F002F6954 /* Daily Info GridExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6A8884DF2F179F5D002F6954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +27,61 @@
 			remoteGlobalIDString = 6A8884D02F179F5C002F6954;
 			remoteInfo = "Daily Info";
 		};
+		6A8885132F179F6F002F6954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A8884C92F179F5C002F6954 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A8884FE2F179F6F002F6954;
+			remoteInfo = "Daily Info GridExtension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A88851A2F179F6F002F6954 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6A8885152F179F6F002F6954 /* Daily Info GridExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6A8884D12F179F5C002F6954 /* Daily Info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Info.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8884DE2F179F5D002F6954 /* Daily InfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily InfoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8884E82F179F5D002F6954 /* Daily InfoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily InfoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8884FF2F179F6F002F6954 /* Daily Info GridExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Daily Info GridExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A8885012F179F6F002F6954 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6A8885032F179F6F002F6954 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6A8885162F179F6F002F6954 /* Exceptions for "Daily Info Grid" folder in "Daily Info GridExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A8884FE2F179F6F002F6954 /* Daily Info GridExtension */;
+		};
+		6A8885172F179F6F002F6955 /* Exceptions for "Daily Info" folder in "Daily Info" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6A8884D02F179F5C002F6954 /* Daily Info */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6A8884D32F179F5C002F6954 /* Daily Info */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A8885172F179F6F002F6955 /* Exceptions for "Daily Info" folder in "Daily Info" target */,
+			);
 			path = "Daily Info";
 			sourceTree = "<group>";
 		};
@@ -43,6 +93,14 @@
 		6A8884EB2F179F5D002F6954 /* Daily InfoUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Daily InfoUITests";
+			sourceTree = "<group>";
+		};
+		6A8885052F179F6F002F6954 /* Daily Info Grid */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6A8885162F179F6F002F6954 /* Exceptions for "Daily Info Grid" folder in "Daily Info GridExtension" target */,
+			);
+			path = "Daily Info Grid";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +127,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A8884FC2F179F6F002F6954 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A8885042F179F6F002F6954 /* SwiftUI.framework in Frameworks */,
+				6A8885022F179F6F002F6954 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +145,8 @@
 				6A8884D32F179F5C002F6954 /* Daily Info */,
 				6A8884E12F179F5D002F6954 /* Daily InfoTests */,
 				6A8884EB2F179F5D002F6954 /* Daily InfoUITests */,
+				6A8885052F179F6F002F6954 /* Daily Info Grid */,
+				6A8885002F179F6F002F6954 /* Frameworks */,
 				6A8884D22F179F5C002F6954 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +157,18 @@
 				6A8884D12F179F5C002F6954 /* Daily Info.app */,
 				6A8884DE2F179F5D002F6954 /* Daily InfoTests.xctest */,
 				6A8884E82F179F5D002F6954 /* Daily InfoUITests.xctest */,
+				6A8884FF2F179F6F002F6954 /* Daily Info GridExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6A8885002F179F6F002F6954 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A8885012F179F6F002F6954 /* WidgetKit.framework */,
+				6A8885032F179F6F002F6954 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +181,12 @@
 				6A8884CD2F179F5C002F6954 /* Sources */,
 				6A8884CE2F179F5C002F6954 /* Frameworks */,
 				6A8884CF2F179F5C002F6954 /* Resources */,
+				6A88851A2F179F6F002F6954 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6A8885142F179F6F002F6954 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				6A8884D32F179F5C002F6954 /* Daily Info */,
@@ -163,6 +244,28 @@
 			productReference = 6A8884E82F179F5D002F6954 /* Daily InfoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6A8884FE2F179F6F002F6954 /* Daily Info GridExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A8885172F179F6F002F6954 /* Build configuration list for PBXNativeTarget "Daily Info GridExtension" */;
+			buildPhases = (
+				6A8884FB2F179F6F002F6954 /* Sources */,
+				6A8884FC2F179F6F002F6954 /* Frameworks */,
+				6A8884FD2F179F6F002F6954 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6A8885052F179F6F002F6954 /* Daily Info Grid */,
+			);
+			name = "Daily Info GridExtension";
+			packageProductDependencies = (
+			);
+			productName = "Daily Info GridExtension";
+			productReference = 6A8884FF2F179F6F002F6954 /* Daily Info GridExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +287,9 @@
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 6A8884D02F179F5C002F6954;
 					};
+					6A8884FE2F179F6F002F6954 = {
+						CreatedOnToolsVersion = 26.2;
+					};
 				};
 			};
 			buildConfigurationList = 6A8884CC2F179F5C002F6954 /* Build configuration list for PBXProject "Daily Info" */;
@@ -203,6 +309,7 @@
 				6A8884D02F179F5C002F6954 /* Daily Info */,
 				6A8884DD2F179F5D002F6954 /* Daily InfoTests */,
 				6A8884E72F179F5D002F6954 /* Daily InfoUITests */,
+				6A8884FE2F179F6F002F6954 /* Daily Info GridExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +330,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6A8884E62F179F5D002F6954 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A8884FD2F179F6F002F6954 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +367,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A8884FB2F179F6F002F6954 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +386,11 @@
 			isa = PBXTargetDependency;
 			target = 6A8884D02F179F5C002F6954 /* Daily Info */;
 			targetProxy = 6A8884E92F179F5D002F6954 /* PBXContainerItemProxy */;
+		};
+		6A8885142F179F6F002F6954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A8884FE2F179F6F002F6954 /* Daily Info GridExtension */;
+			targetProxy = 6A8885132F179F6F002F6954 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -395,11 +521,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Info/Daily_Info.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3259RN3438;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Info/Info.plist";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Daily Info needs calendar access to show your upcoming events in the widget.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Access to your calendar is needed to show upcoming events in the widget.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Daily Info uses Health data to display your Activity Rings progress in the widget.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Daily Info uses your location to show local weather in the widget.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -427,11 +559,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Info/Daily_Info.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3259RN3438;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Info/Info.plist";
+				INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription = "Daily Info needs calendar access to show your upcoming events in the widget.";
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Access to your calendar is needed to show upcoming events in the widget.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Daily Info uses Health data to display your Activity Rings progress in the widget.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Daily Info uses your location to show local weather in the widget.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -538,6 +676,68 @@
 			};
 			name = Release;
 		};
+		6A8885182F179F6F002F6954 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Daily Info Grid/Daily_Info_Grid.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3259RN3438;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Info Grid/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Info Grid";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.nikolov.veselin.Daily-Info.Daily-Info-Grid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A8885192F179F6F002F6954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Daily Info Grid/Daily_Info_Grid.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3259RN3438;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Daily Info Grid/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Info Grid";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.nikolov.veselin.Daily-Info.Daily-Info-Grid";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,6 +773,15 @@
 			buildConfigurations = (
 				6A8884F92F179F5D002F6954 /* Debug */,
 				6A8884FA2F179F5D002F6954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A8885172F179F6F002F6954 /* Build configuration list for PBXNativeTarget "Daily Info GridExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A8885182F179F6F002F6954 /* Debug */,
+				6A8885192F179F6F002F6954 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
